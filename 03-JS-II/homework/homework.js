@@ -5,7 +5,16 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-}
+  describir ( 'obtenerMayor (x, y)' ,  function ( )  {
+    it ( 'debería devolver x si es mayor que y' ,  function ( )  {
+        esperar ( obtenerMayor ( 10 ,  5 ) ) . toBe ( 10 ) ;
+    } ) ;
+    it ( 'debería devolver y si es mayor que x' ,  function ( )  {
+        esperar ( obtenerMayor ( 50 ,  100 ) ) . toBe ( 100 ) ;
+    } ) ;
+    it ( 'debería devolver cualquiera de los dos si son iguales' ,  function ( )  {
+       esperar ( obtenerMayor ( 1000 ,  1000 ) ) . toBe ( 1000 ) ;
+    } ) ;
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
