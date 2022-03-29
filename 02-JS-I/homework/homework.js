@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Gerardo';
+const nuevaString = Gerardo;
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 9;
@@ -88,7 +88,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num > 50)
+  if (60 > 50)
   return true
   else
   return false
@@ -144,8 +144,8 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto num % 1;
-var entero num - resto;
+  var resto;
+var enteronum ;
 if (resto >= 0.5)
 return entero + 1
 else
@@ -183,21 +183,21 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return (str!)
+  return (str)
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  Gerardo Iramain
+  Gerardo, Iramain
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-   hola Gerardo
+   hola, Gerardo
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -236,18 +236,21 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if letra.length <1
-  Dato incorrecto
-  if (letra === a) (letra === e) (letra === i) (letra === o) (letra === u)
-  Dato Correcto
-}
-
+  if (length > 1){
+    return "dato incorrecto"
+  } 
+   
+   if(letra === a) (letra === e) (letra === i) (letra === o) (letra === u)
+  return "es vocal"
+  }
+  
+  
 
 
 // No modificar nada debajo de esta línea
 // --------------------------------
 
-module.exports = {
+ module.exports = {
   nuevaString,
   nuevoNum,
   nuevoBool,
@@ -281,4 +284,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+ }
